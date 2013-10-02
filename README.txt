@@ -1,5 +1,4 @@
-4chandl
-=======
+4chandl.py
 
 4chan image download script
 
