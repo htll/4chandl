@@ -48,7 +48,7 @@ def main(url,folder=None,sleep_time=None):
 		print "Downloading",filename[0]
 
 		#download the image
-		urllib.urlretrieve(dlImage,"%s//%s" %(folder,filename[0]))
+		urllib.urlretrieve(dlImage,"%s/%s" %(folder,filename[0]))
 		
 		#if a sleep time was specified then sleep 
 		if sleep_time:
