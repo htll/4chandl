@@ -59,7 +59,7 @@ if __name__ == "__main__":
 	usage = "Usage: %prog [Options] thread_url"
 	desc = "Downloads all images from a 4chan thread"
 	parser = OptionParser(usage=usage,description=desc)
-	parser.add_option("-f","--folder",default=".",dest="outfolder",help="Location where to download iamges")
+	parser.add_option("-f","--folder",default=".",dest="outfolder",help="Location where to download images")
 	parser.add_option("-s","--sleep",default=2,dest="sleeptimer",help="How long to wait between each image download")
 	(options,args) = parser.parse_args()
 	if(len(args) > 0):
