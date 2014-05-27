@@ -43,7 +43,7 @@ def main(url,folder=None,sleep_time=None):
 	for dlImage in images:
 
 		#extract the filename by splitting the last /
-		filenname = dlImage.split("/")[-1:]
+		filename = dlImage.split("/")[-1:]
 		print "Downloading",filename[0]
 
 		#download the image
