@@ -5,7 +5,6 @@ import os
 from optparse import OptionParser
 from time import sleep
 
-
 def fetchImages(url):
 	downloaded_images = []
 	#Our user-agent
