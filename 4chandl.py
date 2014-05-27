@@ -1,10 +1,9 @@
-from BeautifulSoup import BeautifulSoup
+from bs4 import BeautifulSoup
 import urllib
 import urllib2
 import os
 from optparse import OptionParser
 from time import sleep
-
 
 def fetchImages(url):
 	downloaded_images = []
@@ -44,7 +43,7 @@ def main(url,folder=None,sleep_time=None):
 	for dlImage in images:
 
 		#extract the filename by splitting the last /
-		filenname = dlImage.split("/")[-1:]
+		filename = dlImage.split("/")[-1:]
 		print "Downloading",filename[0]
 
 		#download the image
@@ -60,7 +59,7 @@ if __name__ == "__main__":
 	usage = "Usage: %prog [Options] thread_url"
 	desc = "Downloads all images from a 4chan thread"
 	parser = OptionParser(usage=usage,description=desc)
-	parser.add_option("-f","--folder",default=".",dest="outfolder",help="Location where to download iamges")
+	parser.add_option("-f","--folder",default=".",dest="outfolder",help="Location where to download images")
 	parser.add_option("-s","--sleep",default=2,dest="sleeptimer",help="How long to wait between each image download")
 	(options,args) = parser.parse_args()
 	if(len(args) > 0):
