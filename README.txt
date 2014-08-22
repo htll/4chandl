@@ -12,3 +12,7 @@ Options:
                         Location where to download iamges
   -s SLEEPTIMER, --sleep=SLEEPTIMER
                         How long to wait between each image download
+
+
+
+end gib admin to 1nsignia on new LTFU plz
